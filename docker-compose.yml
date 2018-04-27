@@ -1,0 +1,15 @@
+version: '3'
+services:
+  backend:
+    build: .
+    ports:
+      - 8888:8888
+    volumes:
+      - home:/root
+      - .:/root/examples
+    stdin_open: true
+    tty: true
+
+volumes:
+  # pgdata:
+  home:
