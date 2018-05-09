@@ -1,2 +1,1 @@
-# Mastering-Functional-Programming
-Mastering Functional Programming
+# The code for this repository is under development :construction_worker:
