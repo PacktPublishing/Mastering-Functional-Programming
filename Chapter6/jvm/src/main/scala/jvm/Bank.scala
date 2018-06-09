@@ -30,10 +30,16 @@ object Bank {
       Reader { a => f2(f(a))(a) }
   }
 
-  def createUserReader   (u: User   ): Reader[Connection, Int] = ???
-  def createAccountReader(a: Account): Reader[Connection, Int] = ???
+  def createUserReader   (u: User   ): Reader[Connection, Int] = Reader { _ => 0 }  // Dummy implementation, always returns 0
+  def createAccountReader(a: Account): Reader[Connection, Int] = Reader { _ => 1 }  // Dummy implementation, always returns 0
 
   def registerNewUserReader(name: String): Reader[Connection, Int] =
     createUserReader(User(None, name)).flatMap { uid =>
       createAccountReader(Account(None, uid, 0)) }
+
+  def main(args: Array[String]): Unit = {
+    val reader: Reader[Connection, Int] = registerNewUserReader("John")
+    val accId = reader(new Connection)
+    println(s"Success, account id: $accId")  // Success, account id: 1
+  }
 }
