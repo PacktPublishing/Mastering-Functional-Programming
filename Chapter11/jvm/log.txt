@@ -1,0 +1,21 @@
+Read 6 lines from input
+Computing the following stats: avg=true, max=true, min=true
+Computing the following stats: avg=true, max=true, min=true
+Read the input file to compute statistics on it
+Average Price: 940.0
+Maximal Price: 2500.0
+Minimal Price: 100.0
+Computing the following stats: avg=true, max=true, min=true
+Computing the following stats: avg=true, max=true, min=true
+Computing the following stats: avg=true, max=true, min=true
+Computing the following stats: avg=true, max=true, min=true
+Computing the following stats: avg=true, max=true, min=true
+Computing the following stats: avg=true, max=true, min=true
+Computing the following stats: avg=true, max=true, min=true
+Computing the following stats: avg=true, max=true, min=true
+Read 5 lines from input
+Computing the following stats: avg=true, max=true, min=true
+Read the input file to compute statistics on it
+Average Price: 940.0
+Maximal Price: 2500.0
+Minimal Price: 100.0

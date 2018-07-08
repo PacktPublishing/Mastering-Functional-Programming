@@ -7,6 +7,7 @@ object Tailrec extends App {
 
   println(factorial(5))  // 120
 
+  @annotation.tailrec
   def factorialTailrec(n: Int, accumulator: Int = 1): Int =
     if (n <= 0) accumulator
     else factorialTailrec(n - 1, n * accumulator)
