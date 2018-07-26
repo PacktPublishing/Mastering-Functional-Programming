@@ -14,11 +14,22 @@ object ListSum extends App {
 }
 
 object HListSum extends App {
+  def sumSimple[L <: HList](hlist: L)(implicit m: MapToDouble[L]): Double = {
+    val mapped: m.Result = m.map(hlist)
+    def loop(l: HList): Double = l match {
+      case :::(h: Double, t) => h + loop(t)
+      case HNil => 0
+    }
+    loop(mapped)
+  }
+
   def sum[L <: HList, LR <: HList](hlist: L)(implicit m: MapToDouble.Aux[L, LR], s: Sum[LR]): Double =
     s.sum(m.map(hlist))
 
-  val hlist: String ::: Int ::: Fraction ::: HNil = "1" ::: 2 ::: Fraction(3, 4) ::: HNil
-  val s     = sum(hlist)
+  val hlist: String ::: Int ::: Fraction ::: HNil =
+    "1" ::: 2 ::: Fraction(3, 4) ::: HNil
+
+  val s = sum(hlist)
   println(s"Sum of $hlist is $s")
 }
 
@@ -33,6 +44,10 @@ case object HNil extends HNil
 
 trait MapToDouble[L <: HList] {
   type Result <: HList
+  def map(l: L): Result
+}
+
+trait MapToDoubleNoAux[L <: HList, Result <: HList] {
   def map(l: L): Result
 }
 
