@@ -21,3 +21,6 @@ project/plugins/project/
 
 # Ensime
 /.ensime*
+
+# Project-specific
+/data/

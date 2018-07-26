@@ -32,6 +32,8 @@ lazy val commonSettings = Seq(
 , libraryDependencies ++= Seq(
     "org.typelevel" %% "cats-core" % Cats
   )
+
+, libraryDependencies += "commons-io" % "commons-io" % "2.6"
 )
 
 lazy val root = (project in file("."))

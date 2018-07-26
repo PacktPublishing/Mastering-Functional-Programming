@@ -3,7 +3,7 @@ package jvm
 case class Fraction(numerator: Int, denominator: Int)
 
 object ListSum extends App {
-  val list: List[Any] = List(0, 2D, "3", Fraction(4, 2))
+  val list: List[Any] = List(0, 2.0, "3", Fraction(4, 2))
   val sum = list.map {
     case x: Int => x.toDouble
     case x: Double => x
@@ -17,7 +17,7 @@ object HListSum extends App {
   def sum[L <: HList, LR <: HList](hlist: L)(implicit m: MapToDouble.Aux[L, LR], s: Sum[LR]): Double =
     s.sum(m.map(hlist))
 
-  val hlist = "1" ::: 2 ::: Fraction(3, 4) ::: HNil
+  val hlist: String ::: Int ::: Fraction ::: HNil = "1" ::: 2 ::: Fraction(3, 4) ::: HNil
   val s     = sum(hlist)
   println(s"Sum of $hlist is $s")
 }
@@ -27,17 +27,15 @@ sealed trait HList {
 }
 case class :::[+H, +T <: HList](head: H, tail: T) extends HList {
   override def toString() = s"$head ::: $tail"
-  // def :::[H2](h: H2) = jvm.:::(h, this)
 }
-trait HNil extends HList {
-  // def :::[H](head: H) = jvm.:::(head, HNil)
-}
+trait HNil extends HList
 case object HNil extends HNil
 
 trait MapToDouble[L <: HList] {
   type Result <: HList
   def map(l: L): Result
 }
+
 
 trait Sum[L] {
   def sum(l: L): Double
