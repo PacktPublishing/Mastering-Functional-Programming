@@ -63,6 +63,9 @@ trait Fibers extends Context {
       s2 <- sum(10, 20)
     } yield s1 + s2
 
+  def sequentialTraverse: IO[Int] =
+    List(sum(1, 10), sum(10, 20)).traverse(identity).map(_.sum)
+
   def parallel: IO[Int] =
     for {
       f1 <- sum(1 , 10).start
@@ -82,6 +85,9 @@ trait Fibers extends Context {
 
 object FibersSequantial extends Fibers with App {
   benchmarkFlush(sequential).unsafeRunSync }
+
+object SequentialTraverse extends Fibers with App {
+  benchmarkFlush(sequentialTraverse).unsafeRunSync }
 
 object FibersParallel extends Fibers with App {
   benchmarkFlush(parallel).unsafeRunSync }
