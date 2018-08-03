@@ -2,7 +2,7 @@ package jvm.effect
 
 import scala.util.Try
 
-object TryDemo extends App {
+object OptionDemo extends App {
   def getUserName(id: Int): Option[String] =
     if (Set(1, 2, 3).contains(id)) Some(s"User-$id")
     else None
