@@ -7,6 +7,12 @@ import scala.concurrent.ExecutionContext
 import java.util.concurrent.Executors
 import scala.concurrent.duration._
 
+object HelloWorld extends App {
+  val hello = IO { println("Hello") }
+  val world = IO { println("World") }
+  (hello *> world).unsafeRunSync
+}
+
 trait Context {
   implicit val ec: ExecutionContext =
     ExecutionContext.fromExecutor(Executors.newFixedThreadPool(2))

@@ -1,15 +1,22 @@
 version: '3'
 services:
+  postgres:
+    container_name: mastering_postgres
+    build: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ./_volumes/postgres:/var/lib/postgresql/data
   backend:
+    container_name: mastering_backend
     build: .
     ports:
       - 8888:8888
     volumes:
-      - home:/root
+      - ./_volumes/home:/root
       - .:/root/examples
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
     stdin_open: true
     tty: true
-
-volumes:
-  # pgdata:
-  home:
