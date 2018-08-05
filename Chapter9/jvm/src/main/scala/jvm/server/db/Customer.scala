@@ -73,11 +73,5 @@ object customer extends CustomerDbHelpers {
 }
 
 trait CustomerDbHelpers {
-  val selectCustomerSql =
-    sql"""
-      select
-        id
-      , name
-      from customer
-    """
+  val selectCustomerSql = fr"select * from customer"
 }
