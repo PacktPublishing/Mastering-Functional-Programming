@@ -5,15 +5,17 @@ services:
     build: postgres
     ports:
       - 5432:5432
-    volumes:
-      - ./_volumes/postgres:/var/lib/postgresql/data
+    # volumes:
+    #   - ./_volumes/postgres:/var/lib/postgresql/data
   backend:
     container_name: mastering_backend
     build: .
     ports:
       - 8888:8888
     volumes:
-      - ./_volumes/home:/root
+      - ./_volumes/ivy2:/root/.ivy2
+      - ./_volumes/sbt-boot:/root/.sbt/boot
+      - ./_volumes/coursier:/root/.cache
       - .:/root/examples
     environment:
       - POSTGRES_HOST=postgres
