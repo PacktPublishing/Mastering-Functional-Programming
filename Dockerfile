@@ -1,5 +1,4 @@
 FROM hseeberger/scala-sbt
-ARG CACHE_DATE=not_a_date
 
 RUN mkdir -p /root/.sbt/1.0/plugins
 RUN echo "\

@@ -11,7 +11,6 @@ case class Good(
 , stock: Int)
 
 case class Order(
-  id          : Option[Int] = None
-, customer    : Int
-, order_status: Int
-, time_placed : Long = System.currentTimeMillis)
+  id         : Option[Int] = None
+, customer   : Int
+, good       : Int)
