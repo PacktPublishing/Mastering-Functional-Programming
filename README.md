@@ -39,21 +39,9 @@ With the following software and hardware list you can run all code files present
 ### Software and Hardware List
 | Chapter  | Software required                   | OS required                        |
 | -------- | ------------------------------------| -----------------------------------|
-| 1        | R version 3.3.0                     | Windows, Mac OS X, and Linux (Any) |
-| 2        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 3        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 4        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 5        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 6        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 7        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 8        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 9        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 10        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 11        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 12        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 13        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 14        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
-| 15        | Rstudio Desktop 0.99.903            | Windows, Mac OS X, and Linux (Any) |
+|  1-14    | Docker version 18.06 or higher and  | Windows, Mac OS X, and Linux (Any) |
+|          |  Git version 2.18.0 or higher       |                                    |
+
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/MasteringFunctionalProgramming_ColorImages.pdf).
 
@@ -69,18 +57,6 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ## Get to Know the Author
 **Anatolii Kmetiuk**
 is a Functional Programming and Data Science Freelance Developer. During his programming career, he has worked on Scala projects involving parallel computing, web APIs, SaaS, and data engineering. His areas of expertise include using applications of pure functional programming to build fault-tolerant, reactive systems, as well as parallel computing. Another area of his focus is machine learning and natural language processing.
-
-****
-0
-
-****
-0
-
-****
-0
-
-****
-0
 
 ## Other books by the authors
 [Spark for Data Analysis in Scala [Video]](https://www.packtpub.com/big-data-and-business-intelligence/spark-data-analysis-scala-video?utm_source=github&utm_medium=repository&utm_campaign=9781787281165 )
