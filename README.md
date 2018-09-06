@@ -37,10 +37,9 @@ If you are from an imperative and OOP background, this book will guide you throu
 
 With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
 ### Software and Hardware List
-| Chapter  | Software required                   | OS required                        |
-| -------- | ------------------------------------| -----------------------------------|
-|  1-14    | Docker version 18.06 or higher and  | Windows, Mac OS X, and Linux (Any) |
-|          |  Git version 2.18.0 or higher       |                                    |
+| Chapter  | Software required                                               | OS required                        |
+| -------- | ----------------------------------------------------------------| -----------------------------------|
+|  1-14    | Docker version 18.06 or higher and Git version 2.18.0 or higher | Windows, Mac OS X, and Linux (Any) |
 
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/MasteringFunctionalProgramming_ColorImages.pdf).
