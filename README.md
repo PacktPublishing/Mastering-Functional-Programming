@@ -4,7 +4,7 @@
 
 This is the code repository for [Mastering Functional Programming](https://www.packtpub.com/application-development/mastering-functional-programming?utm_source=github&utm_medium=repository&utm_campaign=9781788620796 ), published by Packt.
 
-**Learn how functional programming can help you in deploying web servers and working with databases in a declarative and pure way **
+**Learn how functional programming can help you in deploying web servers and working with databases in a declarative and pure way**
 
 ## What is this book about?
 In large projects, it can get difficult keeping track of all the interdependencies of the code base and how its state changes at runtime. Functional Programming helps us solve these problems. It is a paradigm specifically designed to deal with the complexity of software development. This book will show you how the right abstractions can reduce complexity and make your code easy to read and understand.
@@ -63,9 +63,5 @@ is a Functional Programming and Data Science Freelance Developer. During his pro
 
 [](https://www.packtpub.com/application-development/advanced-techniques-data-analysis-scala-video?utm_source=github&utm_medium=repository&utm_campaign=)
 
-[]()
 
-[]()
-
-[]()
 
