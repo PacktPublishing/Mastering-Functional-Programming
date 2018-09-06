@@ -56,7 +56,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 **Anatolii Kmetiuk**
 is a Functional Programming and Data Science Freelance Developer. During his programming career, he has worked on Scala projects involving parallel computing, web APIs, SaaS, and data engineering. His areas of expertise include using applications of pure functional programming to build fault-tolerant, reactive systems, as well as parallel computing. Another area of his focus is machine learning and natural language processing.
 
-## Other books by the authors
+## Video by the author
 [Spark for Data Analysis in Scala [Video]](https://www.packtpub.com/big-data-and-business-intelligence/spark-data-analysis-scala-video?utm_source=github&utm_medium=repository&utm_campaign=9781787281165 )
 
 [](https://www.packtpub.com/application-development/advanced-techniques-data-analysis-scala-video?utm_source=github&utm_medium=repository&utm_campaign=)
