@@ -66,6 +66,7 @@ class Worker extends Actor {
       else {
         println(s"Reached maximal depth on $url - returning its links only")
         sender ! Result(buffer)
+        context stop self
       }
   }
 

@@ -164,10 +164,22 @@ object HierarchiesResolve extends App {
 
 object HierarchiesDemo extends App {
   import HierarchiesBase._
+  
+  def printState(childrenEmpty: Boolean, isHelloMessage: Boolean) =
+    Future { println(s"\n=== Children: ${if (childrenEmpty) "empty" else "present"}, " +
+      s"Message: ${if (isHelloMessage) "SayHello" else "SpawnGreeters"}") }
+
   Await.ready(for {
+    _ <- printState(true, true)
     _ <- gm ? SayHello("me")
+
+    _ <- printState(true, false)
     _ <- gm ? SpawnGreeters(3)
+
+    _ <- printState(false, false)
     _ <- gm ? SpawnGreeters(3)
+
+    _ <- printState(false, true)
     _ <- gm ? SayHello("me")
   } yield (), 5 seconds)
 }
