@@ -46,13 +46,11 @@ With the following software and hardware list you can run all code files present
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://www.packtpub.com/sites/default/files/downloads/MasteringFunctionalProgramming_ColorImages.pdf).
 
 ### Related products
-*  [[Packt]](https://www.packtpub.com/application-development/scala-reactive-programming?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/B073FR5T8F)
+* Scala Reactive Programming  [[Packt]](https://www.packtpub.com/application-development/scala-reactive-programming?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/B073FR5T8F)
 
-*  [[Packt]](https://www.packtpub.com/application-development/modern-scala-projects?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/B07FDBHZ7V)
+* Modern Scala Projects [[Packt]](https://www.packtpub.com/application-development/modern-scala-projects?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/B07FDBHZ7V)
 
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
 
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
 
 ## Get to Know the Author
 **Anatolii Kmetiuk**
