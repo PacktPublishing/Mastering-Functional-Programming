@@ -1,4 +1,4 @@
-FROM hseeberger/scala-sbt
+FROM hseeberger/scala-sbt:8u222_1.3.3_2.13.1
 
 RUN mkdir -p /root/.sbt/1.0/plugins
 RUN echo "\
